@@ -1,6 +1,9 @@
 # Unity-Timer
 A Timer component for Unity
 
+## Install
+Get the latest package at the [Releases](https://github.com/BartInTheField/Unity-Timer/releases) tab. Use the Unity package manager to install the package.
+
 ## Fields
 ![Fields](/images/fields.png)
 
@@ -9,7 +12,7 @@ A Timer component for Unity
 * Auto start: Will start the timer when the scene starts.
 
 ## Actions
-The script has two public actions which an other script can subscribe to.
+The script has two public actions which another script can subscribe to.
 
 ```csharp 
 public event Action OnTimeout = delegate { };
@@ -17,7 +20,7 @@ public event Action<float> OnTimeChanged = delegate { };
 ```
 
 * OnTimeout: Is called when the timer hits zero.
-* OnTimeChanged: Is called every update and will return the current time.
+* OnTimeChanged: This is called every update and will return the current time.
 
 ## Methods
 The script has one public method that can be called by other scripts.
